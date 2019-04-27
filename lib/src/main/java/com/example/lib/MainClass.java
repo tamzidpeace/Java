@@ -1,6 +1,8 @@
 package com.example.lib;
 
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 
 public class MainClass {
@@ -8,9 +10,16 @@ public class MainClass {
 
     public static void main(String[] args) {
 
-        int[] ar = {-2, 0 , 2};
-        Arrays.sort(ar);
-        System.out.println(Arrays.toString(ar));
+       List<String> mLinkList = new LinkedList<>();
+       mLinkList.add("arafat");
+       mLinkList.add("kamal");
+       mLinkList.add("tamzid");
+       mLinkList.add(3, "hi");
+       mLinkList.remove(3);
+
+       for(String i : mLinkList) {
+           System.out.println(i);
+       }
 
     }
 
